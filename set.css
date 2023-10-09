@@ -1,0 +1,40 @@
+body
+{
+    
+    position: relative; /* Required for absolute positioning */
+    animation: Rise 2s ease-in-out forwards;
+}
+
+@keyframes Rise 
+{
+    0% {
+        opacity: 0; /* Start with zero opacity (hidden) */
+        transform: translateY(200px); /* Start 100px below its original position */
+    }
+    100% {
+        opacity: 1; /* End with full opacity (visible) */
+        transform: translateY(0); /* End at its original position */
+    }
+}
+
+@keyframes Fade
+{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes Wipe
+{
+    0% {
+        opacity: 0;
+        left: -50px;
+    }
+    100% {
+        opacity: 1;
+        left: 50px;
+    }
+}
